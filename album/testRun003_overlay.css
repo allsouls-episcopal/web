@@ -1,0 +1,19 @@
+
+
+#overlay_text {
+	position: absolute; 
+	  top:  var( --top );
+	  left: var( --left );
+	  
+	  color: var( --fontColor ) ;
+	  font-size: var( --fontSize )	; 
+	  
+  background-color: rgba(0, 0, 0, 0.6);  
+  padding: 8px 12px;   border-radius: 4px;
+}
+
+.photo-container {  position: relative;  display: inline-block;
+}
+
+.photo-container img {  display: block;  height: auto;  width: 100%; 		
+}

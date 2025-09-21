@@ -1,0 +1,53 @@
+/* Palette container: bottom-center, subtle, hovering above content */
+
+.album-nav {
+  position: fixed;
+  left: 10%;
+  bottom: 2rem;
+  transform: translateX(-50%);
+  display: inline-flex;
+  gap: 0.5rem;
+  padding: 0.35rem;
+  background: rgba(0, 0, 0, 0.25);      /* semi-transparent */
+  border-radius: 999px;                  /* pill */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+}
+
+/* Buttons: quiet by default, readable on any photo */
+.nav-btn {
+  appearance: none;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  padding: 0.5rem 0.9rem;
+  font: 500 14px/1.2 system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  border-radius: 999px;
+  cursor: pointer;
+
+}
+
+/* Hover/focus: gently more visible, no harsh jumps */
+.nav-btn:hover,
+.nav-btn:focus-visible {
+  background: rgba(255, 255, 255, 0.25);
+  border-color: rgba(255, 255, 255, 0.6);
+  outline: none;
+}
+
+/* Active press feedback */
+.nav-btn:active {
+  transform: translateY(1px);
+}
+
+
+/* High-contrast fallback if the background is very light */
+@media (prefers-color-scheme: light) {
+  .album-nav {
+    background: rgba(0, 0, 0, 0.20);
+  }
+  .nav-btn {
+    border-color: rgba(255, 255, 255, 0.4);
+  }
+}
+
