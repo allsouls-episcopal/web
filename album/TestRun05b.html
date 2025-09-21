@@ -1,0 +1,36 @@
+<!DOCTYPE html><html lang="">
+<head><meta charset="UTF-8">
+<style>
+
+div img { width: 100%;
+}
+</style>
+
+<link rel="stylesheet"  href="page_control_btn2.css" > 
+<link rel="stylesheet"  href="testRun003_overlay.css" > 
+
+<script src="testRun005b_list.js"  ></script>
+<script src="testRun004.js"  ></script>
+<script src="testRun003_overlay.js"  ></script>
+
+</head>
+<body onload= "prepPhotoList() "  >
+
+<main>
+
+<div style= " " >
+	 <img id= "photo_A"   src= "image/102yama.jpg" >
+	 
+	<div id="overlay_text"  style= "--top: 250px; --left: 80px; --fontColor: skyblue;  --fontSize: 48px;"></div>	 	 
+</div>
+
+
+<div id="nav-buttons" class="album-nav" >
+  <button class="nav-btn " onclick="prevPhoto()"> &lt; </button>
+  <button class="nav-btn " onclick="nextPhoto()" > Next &gt;&gt;</button>
+</div>
+
+
+</main>
+</body>
+</html>
