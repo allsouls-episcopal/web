@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Parent Coordinator Needed</title>
+  <style>
+    :root{
+      --bg:#ffffff;
+      --text:#1a1a1a;
+      --accent:#0b6cf0;
+      --accent-2:#0fa36b;
+      --accent-3:#d94b2b;
+      --highlight:#fff3c4;
+      --border:#e6e6e6;
+    }
+    @media (prefers-color-scheme: dark){
+      :root{
+        --bg:#0f1115;
+        --text:#f4f4f5;
+        --accent:#7aa8ff;
+        --accent-2:#6bd4a3;
+        --accent-3:#ff7a5c;
+        --highlight:#2a2a1e;
+        --border:#2a2d33;
+      }
+    }
+    body{
+      margin:0;
+      background:var(--bg);
+      color:var(--text);
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      line-height:1.5;
+    }
+    .wrap{
+      max-width:700px;
+      margin:0 auto;
+      padding:16px;
+    }
+    .card{
+      border:1px solid var(--border);
+      border-radius:14px;
+      padding:18px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+    }
+    h1{
+      font-size:1.6rem;
+      margin:0 0 6px;
+      color:var(--accent);
+    }
+    h2{
+      font-size:1.2rem;
+      margin:18px 0 8px;
+      color:var(--accent-2);
+    }
+    p{
+      margin:6px 0;
+      font-size:1rem;
+    }
+    .list{
+      margin:8px 0 4px 0;
+      padding-left:18px;
+    }
+    .list li{
+      margin:8px 0;
+      font-size:1rem;
+    }
+    .badge{
+      display:inline-block;
+      background:var(--highlight);
+      color:var(--text);
+      padding:4px 8px;
+      border-radius:8px;
+      border:1px solid var(--border);
+      font-weight:600;
+    }
+    .note{
+      border-left:4px solid var(--accent-3);
+      background:rgba(217,75,43,0.06);
+      padding:10px 12px;
+      border-radius:10px;
+      margin:10px 0;
+    }
+    .contact{
+      border-left:4px solid var(--accent);
+      background:rgba(11,108,240,0.08);
+      padding:10px 12px;
+      border-radius:10px;
+      margin-top:12px;
+    }
+    /* Mobile-first spacing; slightly wider on desktop */
+    @media (min-width:768px){
+      .wrap{ padding:24px; }
+      .card{ padding:22px; }
+      h1{ font-size:1.8rem; }
+      h2{ font-size:1.25rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Announcement</h1>
+      <h2>Parent Coordinator Needed</h2>
+      <p>The Nature Study Group is seeking parents to support children’s learning on the church campus.</p>
+
+      <h2>When</h2>
+      <p><span class="badge">Every Sunday</span> at <strong>9:35 AM</strong></p>
+      <p>Rain or shine</p>
+      <p>Church parking lot</p>
+
+      <h2>Why we need adults</h2>
+      <ul class="list">
+        <li>Direct arriving cars to the <strong>ocean‑view side</strong>, away from the banana grove</li>
+        <li>Watch children to ensure parking lot traffic safety</li>
+        <li>Carry small children on shoulders so they can see the higher parts of the banana trees</li>
+      </ul>
+
+      <h2>Rainy day plan</h2>
+      <ul class="list">
+        <li>Families arriving with children are advised to tour the banana trees from inside the car</li>
+        <li>The banana‑grove side of the parking lot must remain open until <strong>9:55 AM</strong></li>
+      </ul>
+
+      <div class="note">
+        <strong>Note:</strong> After the children finish their banana study, the banana‑grove side parking area will be opened.
+      </div>
+
+
+    </div>
+  </div>
+</body>
+</html>
+
